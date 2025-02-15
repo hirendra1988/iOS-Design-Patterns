@@ -1,0 +1,9 @@
+The Strategy Design Pattern is a way to define a family of behaviors (algorithms) and make them interchangeable without modifying the existing code.
+
+Simple Explanation:
+Imagine you have a payment system that supports multiple payment methods like Credit Card, PayPal, and UPI. Instead of hardcoding the payment logic, you create a common interface and implement different payment strategies separately. At runtime, you can choose which payment method to use without changing the main system.
+
+Key Points:
+Encapsulates algorithms (behaviors) in separate classes.
+Allows switching between different strategies dynamically.
+Promotes open-closed principle (open for extension, closed for modification).
