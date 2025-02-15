@@ -1,0 +1,8 @@
+The Prototype design pattern is a creational pattern that allows cloning an existing object instead of creating a new one from scratch. This is useful when object creation is expensive or complex.
+
+When to Use the Prototype Pattern in iOS?
+✅ Good Use Cases:
+
+When creating an object is expensive (e.g., deep copying large models).
+When you need a copy of an object but don’t want to go through initialization again.
+When working with objects that have different configurations but share common properties.

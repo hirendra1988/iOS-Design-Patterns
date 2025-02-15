@@ -1,0 +1,16 @@
+The "Factory Design Pattern" is a way to create objects without directly specifying their class. Instead, a separate "factory" class handles object creation based on input parameters. This makes the code more flexible and less dependent on specific classes.
+
+Default Example:
+Factory → Used in UIButton(type:), UIFont(name:size:)
+
+
+Advantages of Factory Design Pattern
+Encapsulation: Object creation code is encapsulated in a single place, reducing redundancy.
+Scalability: Adding new object types is easier and does not require changes in the existing client code.
+Testability: Facilitates easier testing by allowing the use of mock factories.
+
+
+Disadvantages of Factory Design Pattern
+Complexity: Can introduce additional complexity if not used wisely, especially for simple applications.
+Overhead: Adds extra layers of abstraction which might be unnecessary for small projects.
+Maintenance: The factory class itself can become complex if it needs to handle many object types.

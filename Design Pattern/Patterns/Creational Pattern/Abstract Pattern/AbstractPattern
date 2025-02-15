@@ -1,0 +1,10 @@
+An Abstract Factory is a Creational Design pattern that creates an interface for the creation of a family of objects without specifying their concrete implementation.
+
+Implementation
+The Abstract Factory design pattern consists of 5 main components:
+
+Abstract product
+Concrete product
+Abstract factory
+Concrete factory
+Client

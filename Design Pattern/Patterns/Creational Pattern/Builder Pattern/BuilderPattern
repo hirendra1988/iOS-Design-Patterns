@@ -1,0 +1,11 @@
+The "Builder Pattern" is a creational design pattern because it helps in constructing complex objects step by step. Instead of creating objects directly using a constructor, it provides a systematic way to build them, improving readability and flexibility.
+
+Where is the Builder Pattern Used in iOS?
+SwiftUI View Builders: SwiftUI uses a declarative approach similar to the Builder Pattern.
+
+
+Why Use the Builder Pattern?
+Improves Readability – No need to pass many parameters in a long initializer.
+Handles Optional Properties – You can add only the properties you need.
+Encapsulates Object Creation Logic – Keeps initialization flexible and maintainable.
+
