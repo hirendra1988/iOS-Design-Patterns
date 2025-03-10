@@ -5,6 +5,21 @@
 //  Created by Hirendra Sharma on 12/02/25.
 //
 
+//✅ This implementation follows below SOLID principles effectively! 🎯🔥
+//1. Single Responsibility Principle (SRP) ✅
+//Pizza: Responsible for holding pizza data (size, toppings).
+//PizzaBulder: Responsible for constructing a pizza.
+//ViewController simply uses the builder.
+
+//2. Open-Closed Principle (OCP) ✅
+//We can add new methods in PizzaBulder (e.g., addOlives()) without modifying existing methods.
+//Pizza doesn’t need changes when we add new toppings.
+
+//4. Interface Segregation Principle (ISP) ✅
+//PizzaBulder provides only necessary methods (addCheese(), addMushroom()).
+//If a pizza does not need pepperoni, we simply don’t call addPepperoni().
+
+
 extension ViewController {
     
     func builderPatternExample2() {

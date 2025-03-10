@@ -18,6 +18,7 @@
 - Command → Ordering food at a restaurant (waiter relays order to kitchen)
 - Iterator → TV remote next/previous buttons
 - Mediator → Air traffic controller managing multiple flights
+- Strategy ->
 - Delegation pattern
 
 

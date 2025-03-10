@@ -1,0 +1,25 @@
+There are multiple ways to implement the Observer Pattern in iOS:
+
+1️⃣ Using NotificationCenter
+A lightweight and decentralized approach where objects subscribe to notifications.
+
+2️⃣ Using KVO (Key-Value Observing)
+KVO is useful when observing property changes in another object.
+
+3️⃣ Using Combine (Modern Approach)
+
+4️⃣ Using Delegation (Manual Observer Pattern)
+
+3️⃣ Using RxSwift
+
+Which One to Use?
+NotificationCenter → When multiple objects need to listen (Global Events).
+KVO → When tracking property changes.
+Combine → When using a reactive programming approach.
+Delegation → When having a one-to-one relationship.
+
+
+🔥 Advantages
+✅ Decoupled Design → Product does not need to know how User handles notifications.
+✅ Scalable → Multiple users can subscribe/unsubscribe dynamically.
+✅ Follows Observer Pattern → Ensures efficient notification updates.

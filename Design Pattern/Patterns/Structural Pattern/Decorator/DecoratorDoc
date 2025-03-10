@@ -1,0 +1,13 @@
+The Decorator Design Pattern is a structural pattern used in iOS development to dynamically extend the functionality of objects without modifying their structure. This is particularly useful when subclassing becomes impractical due to class explosion or when modifications should be applied at runtime.
+
+Key Concepts of the Decorator Pattern
+Allows adding behavior dynamically to an object.
+Avoids subclassing, promoting code reusability and flexibility.
+Uses composition instead of inheritance.
+
+
+When Should You Use the Decorator Pattern?
+✅ When you need to extend functionality without modifying existing code.
+✅ When subclassing leads to a combinatorial explosion of subclasses.
+✅ When you want to dynamically change an object's behavior at runtime.
+✅ When you want to avoid modifying a base class for minor feature additions.
