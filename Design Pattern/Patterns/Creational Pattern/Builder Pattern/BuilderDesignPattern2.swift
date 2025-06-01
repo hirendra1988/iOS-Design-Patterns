@@ -19,7 +19,6 @@
 //PizzaBulder provides only necessary methods (addCheese(), addMushroom()).
 //If a pizza does not need pepperoni, we simply don’t call addPepperoni().
 
-
 extension ViewController {
     
     func builderPatternExample2() {

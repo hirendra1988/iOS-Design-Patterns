@@ -18,7 +18,6 @@ protocol Observer: AnyObject {
 //2️⃣ Create the Subject (Observable)
 class Product {
     private var observers = [Observer]()
-    var name: String
     var isAvailable: Bool = false {
         didSet {
             if isAvailable {
@@ -27,6 +26,7 @@ class Product {
         }
     }
 
+    var name: String
     init(name: String) {
         self.name = name
     }

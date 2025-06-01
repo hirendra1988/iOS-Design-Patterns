@@ -28,7 +28,6 @@ extension ViewController {
         //All button types implement the ButtonProtocol protocol.
         //A UIButton object can be retrieved from any button type, and they all work interchangeably.
 
-
         let primaryButton = ButtonFactory.createButton(type: .primary)
         let secondaryButton = ButtonFactory.createButton(type: .secondary)
         print(primaryButton)
@@ -36,7 +35,6 @@ extension ViewController {
         
         //5. Dependency Inversion Principle (DIP) ✅
         //The factory and ViewController work with the ButtonProtocol protocol, not specific classes like PrimaryButton or SecondaryButton.
-
     }
     
 }
