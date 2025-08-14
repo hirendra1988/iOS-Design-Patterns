@@ -26,8 +26,23 @@ extension ViewController {
     
 }
 
+protocol LightProtocol {
+    func turnOn()
+    func turnOff()
+}
+
+protocol AirConditionerProtocol {
+    func turnOn()
+    func turnOff()
+}
+
+protocol MusicSystemProtocol {
+    func playMusic()
+    func stopMusic()
+}
+
 //Step 1: Subsystems
-class Light {
+class Light: LightProtocol {
     func turnOn() {
         print("Lights are ON")
     }
@@ -37,7 +52,7 @@ class Light {
     }
 }
 
-class AirConditioner {
+class AirConditioner: AirConditionerProtocol {
     func turnOn() {
         print("Air Conditioner is ON")
     }
@@ -47,7 +62,7 @@ class AirConditioner {
     }
 }
 
-class MusicSystem {
+class MusicSystem: MusicSystemProtocol {
     func playMusic() {
         print("Music System is PLAYING")
     }
@@ -59,13 +74,13 @@ class MusicSystem {
 
 //Step 2: Facade Class
 class HomeFacade {
-    private let light: Light
-    private let ac: AirConditioner
-    private let music: MusicSystem
+    private let light: LightProtocol
+    private let ac: AirConditionerProtocol
+    private let music: MusicSystemProtocol
 
-    init(light: Light = Light(),
-         ac: AirConditioner = AirConditioner(),
-         music: MusicSystem = MusicSystem()) {
+    init(light: LightProtocol = Light(),
+         ac: AirConditionerProtocol = AirConditioner(),
+         music: MusicSystemProtocol = MusicSystem()) {
         self.light = light
         self.ac = ac
         self.music = music
